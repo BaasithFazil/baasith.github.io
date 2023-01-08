@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lato:ital,wght@0,300;1,300&display=swap');
+
+
 
 ::-webkit-scrollbar {
   width: 20px;
@@ -21,10 +24,10 @@
 }
 /*#149ddd */ 
 * {
-  font-family: 'Poppins';
+  font-family: 'Inter', sans-serif;
 }
 body {
-  font-family:'Poppins';
+  font-family:'Inter', sans-serif;
   color: #272829;
 }
 
@@ -39,7 +42,7 @@ a:hover {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Poppins', ;
+  font-family: 'Inter', sans-serif, ;
 }
 
 /*--------------------------------------------------------------
@@ -307,7 +310,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: white;
 }
 
 .section-title, .row, #facts, #skills, #resume, #services, #contact {
@@ -342,6 +345,18 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+/* .about .container {
+  margin: 20px 20px 20px 20px;
+} */
+
+
+#skills, #resume, #services, #contact,  .about .container {
+  margin-top: 10px;
+  padding-top: 10px;
+  background-color: #ffffca;
+  border-radius: 10px;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -373,6 +388,7 @@ section {
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Facts
@@ -428,6 +444,9 @@ section {
 /*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
+
+
+
 .skills .progress {
   height: 60px;
   display: block;
