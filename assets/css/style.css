@@ -28,6 +28,14 @@
   width: 80px;
 }
 
+@media only screen and (min-width: 200px ) and (max-width: 500px) {
+  .image2 {
+    height: 200px;
+    width: 100px;
+  }
+  
+}
+
 .image2 {
   height: 400px;
   width: 300px;
@@ -107,11 +115,15 @@ h1,h2,h3,h4,h5,h6 {
   overflow-y: auto;
 }
 
+@media only screen and (min-width: 200px ) and (max-width: 500px) {
+
+}
+
 #header .profile img {
   margin: 15px auto;
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border: 1px solid #2c2f3f;
 }
 
@@ -317,8 +329,7 @@ h1,h2,h3,h4,h5,h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
-  overflow: hidden;
+  padding: 30px 0;
 }
 
 .section-bg {
@@ -887,6 +898,7 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
 .contact {
   padding-bottom: 130px;
 }
@@ -1162,4 +1174,19 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 */
+  position: relative;
+} 
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 100%;
+  height: 100%;
 }
