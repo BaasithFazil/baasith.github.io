@@ -75,11 +75,13 @@ h1,h2,h3,h4,h5,h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: rgb(238, 241, 25);
   width: 40px;
   height: 40px;
-  border-radius: 50px;
   transition: all 0.4s;
+  border-radius: 50px;
+background: #1a1919;
+box-shadow: inset -16px 16px 32px #121111,
+            inset 16px -16px 32px #222121;
 }
 
 .back-to-top i {
@@ -91,6 +93,10 @@ h1,h2,h3,h4,h5,h6 {
 .back-to-top:hover {
   background: rgb(233, 236, 24);
   color: #fff;
+  border-radius: 50px;
+background: #1a1919;
+box-shadow: inset -16px 16px 32px #121111,
+            inset 16px -16px 32px #222121;
 }
 
 .back-to-top.active {
@@ -347,7 +353,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: black
+  color: white;
 }
 
 .section-title h2::after {
@@ -356,13 +362,15 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: rgb(230, 230, 15);
+  background: white;
   bottom: 0;
   left: 0;
+  
 }
 
 .section-title p {
   margin-bottom: 0;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -371,24 +379,25 @@ section {
 /* .about .container {
   margin: 20px 20px 20px 20px;
 } */
-
+#main {
+  background-color: black;
+}
 
 #skills, #resume, #services, #contact,  .about .container {
   margin-top: 10px;
   padding-top: 10px;
-  background-color: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
--moz-box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
-box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
+  border-radius: 9px;
+  background: #0d0d0d;
+  box-shadow: inset -20px -20px 40px #050505,
+              inset 20px 20px 40px #151515;
 }
 
 
 .my-form {
-  -webkit-box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
--moz-box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
-box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
-  border-radius: 10px;
+  border-radius: 9px;
+  background: #0d0d0d;
+  box-shadow: inset -20px -20px 40px #050505,
+              inset 20px 20px 40px #151515;
 }
 
 #contact .info {
@@ -402,7 +411,7 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: black;
+  color:white;
 }
 
 .about .content ul {
@@ -414,6 +423,8 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  color: white;
+  opacity: 0.8;
 }
 
 .about .content ul strong {
@@ -423,12 +434,13 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: yellow;
+  color: white;
   line-height: 0;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
+  color: white;
 }
 
 
@@ -496,6 +508,7 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
   border-radius: 0;
   padding-right: 30px;
   padding-left: 30px;
+  color: white;
 }
 
 .skills .progress .skill {
@@ -505,12 +518,13 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: black;
+  color: white;
 }
 
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
+  color: white;
 }
 
 .skills .progress-bar-wrap {
@@ -522,7 +536,7 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: Yellow;
+  background-color: black; 
   color: black;
 }
 
@@ -534,14 +548,15 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: black;
+  color: white;
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid yellow;
+  border-left: 5px solid black;
   position: relative;
+  color: white;
 }
 
 .resume .resume-item h4 {
@@ -550,29 +565,33 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: rgb(122, 122, 122);
+  color: white;
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: rgb(233, 233, 86);
+  background: white;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  color: black;
 }
 
 .resume .resume-item ul {
   padding-left: 20px;
+  color: white;
 }
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  color: white;
 }
 
 .resume .resume-item:last-child {
   padding-bottom: 0;
+  color: white;
 }
 
 .resume .resume-item::before {
@@ -584,7 +603,8 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid rgb(204, 204, 21);
+  border: 2px solid grey;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -767,10 +787,10 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: rgb(231, 231, 32);
+  background: black;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid rgb(235, 235, 16);
+  border: 1px solid white;
 }
 
 .services .icon i {
@@ -780,11 +800,11 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
 }
 
 .services .icon-box:hover .icon {
-  background: #fff;
+  background: black;
 }
 
 .services .icon-box:hover .icon i {
-  color: yellow;
+  color: white;
 }
 
 .services .title {
@@ -792,10 +812,11 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  color: white;
 }
 
 .services .title a {
-  color: #343a40;
+  color: white;
 }
 
 .services .title a:hover {
@@ -806,6 +827,7 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
+  color: grey;
 }
 
 /*--------------------------------------------------------------
@@ -910,14 +932,14 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background: black;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: yellow;
+  color: black;
   float: left;
   width: 44px;
   height: 44px;
@@ -946,6 +968,7 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
 
 .contact .info .email p {
   padding-top: 5px;
+  color: black;
 }
 
 .contact .info .social-links {
@@ -982,7 +1005,7 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
 .contact .php-email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
+  color: black;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -1046,6 +1069,7 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
 
 .contact .php-email-form label {
   padding-bottom: 8px;
+  color: white;
 }
 
 .contact .php-email-form input,
@@ -1057,27 +1081,46 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
 
 .contact .php-email-form input {
   height: 44px;
-  caret-color: rgb(230, 230, 51);
-  border-color: rgb(255, 244, 83);
+  caret-color: black;
+  border-color: black;
+  background-color: white;
+  opacity: 0.95;
+  border-radius: 5px;
+background: #f1e9e9;
+box-shadow: inset -5px 5px 15px #a49e9e,
+            inset 5px -5px 15px #ffffff;
+  
 }
 
 .contact .php-email-form textarea {
   padding: 10px 15px;
-  caret-color: rgb(230, 230, 51);
-  border-color: rgb(255, 244, 83);
+  caret-color: black;
+  border-color: black;
+  border-radius: 5px;
+background: #f1e9e9;
+box-shadow: inset -5px 5px 15px #a49e9e,
+            inset 5px -5px 15px #ffffff;
 }
 
 .contact .php-email-form button[type=submit] {
-  background: rgb(238, 238, 76);
+  background-color: black;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: white;
   transition: 0.4s;
-  border-radius: 4px;
+  border-radius: 9px;
+  background: #0d0d0d;
+  box-shadow: inset -20px -20px 40px #050505,
+              inset 20px 20px 40px #151515;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: yellow;
+  background: white;
+  color: black;
+  border-radius: 9px;
+  background: #f1e9e9;
+  box-shadow: inset -5px 5px 15px #a49e9e,
+              inset 5px -5px 15px #ffffff;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1224,6 +1267,7 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
     position: relative;
     width: 22vw;
     height: 100vh;
+    
   } 
   .iframe-container iframe {
     position: absolute;
@@ -1240,7 +1284,8 @@ box-shadow: 1px -1px 36px 6px rgba(117,117,117,0.58);
     overflow: hidden;
     padding-top: 56.25%; /* 16:9 */
     position: relative;
-    width: 100vw;
+    width: 50vw;
+    border-radius: 10px;
   } 
   
   .iframe-container iframe {
